@@ -15,23 +15,23 @@
                 <img src={jeans} width="100%"/>
                 </div>
 
-                <div class="border-bottom  ">
-                    <h1>Collections</h1>
-                    <form>
+                <div class="border-bottom">
+                    <h1 class="fw-bold">Collections</h1>
+                    <form class="my-3">
                         {
                             collections.map((coll)=>{
-                                return <span><input type="checkbox" class="small"/>{coll}<br/></span>
+                                return <span><input type="checkbox" class="small"/><span class="p-2">{coll}</span><br/></span>
                             })
                         }
                     </form>
                 </div>
 
                 <div class="border-bottom   ">
-                    <h1>Cotegories</h1>
+                    <h1 class="fw-bold">Cotegories</h1>
                     <form>
                         {
                             categories.map((cat)=>{
-                                return <span><input type="checkbox" class="small"/>{cat}<br/></span>
+                                return <span><input type="checkbox" class="small"/><span class="p-2">{cat}</span><br/></span>
                             })
                         }
 
@@ -40,11 +40,11 @@
                 </div>
 
                 <div class="border-bottom  ">
-                    <h1>Occation</h1>
+                    <h1 class="fw-bold">Occation</h1>
                     <form>
                     {
                         occation.map((occ)=>{
-                            return <span><input type="checkbox" class="small"/>{occ}<br/></span>
+                            return <span><input type="checkbox" class="small"/><span class="p-2">{occ}</span><br/></span>
                         })
                     }
                     </form>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div>
-                    <h1>Colors</h1>
+                    <h1 class="fw-bold">Colors</h1>
                     <form>
                         {
                             colors.map((colo)=>{
@@ -70,11 +70,11 @@
 
                 </div>
                 <div>
-                    <h1>Stock</h1>
+                    <h1 class="fw-bold">Stock</h1>
                     <form>
                         {
                             stock.map((sto)=>{
-                                return <span><input type="radio" class="small"/>{sto}<br/></span>
+                                return <span><input type="radio" class="small"/><span class="p-2">{sto}</span><br/></span>
                             })
                         }
                     </form>

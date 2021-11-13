@@ -24,8 +24,12 @@
                         {image:image5,title:'Velveteen Black Dress',mrp:'1000',cost:'699'},
                         {image:image7,title:'Lace insert Velveteen Black',mrp:'1000',cost:'699'},
                         {image:image5,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
-                        {image:image8,title:'Lace insert Velveteen ',mrp:'1000',cost:'699'},
+                        {image:image7,title:'Lace insert Velveteen ',mrp:'1000',cost:'699'},
+                        {image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
+                        {image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
                         {image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'}])
+                    
+                    
 
                         const clearAll = (()=>{
                             setNames([])
