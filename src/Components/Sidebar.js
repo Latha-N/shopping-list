@@ -11,12 +11,12 @@
     return (
         <div class="container-fluid bg-white">
             
-                <div class="card img-fluid jens">
+                <div className="card img-fluid jens ">
                 <img src={jeans} width="100%"/>
                 </div>
 
-                <div class="border-bottom">
-                    <h1 class="fw-bold">Collections</h1>
+                <div class="border-bottom m-4">
+                    <h5 class="fw-bold ">Collections</h5>
                     <form class="my-3">
                         {
                             collections.map((coll)=>{
@@ -26,8 +26,8 @@
                     </form>
                 </div>
 
-                <div class="border-bottom   ">
-                    <h1 class="fw-bold">Cotegories</h1>
+                <div class="border-bottom  m-4 ">
+                    <h5 class="fw-bold">Cotegories</h5>
                     <form>
                         {
                             categories.map((cat)=>{
@@ -39,8 +39,8 @@
                     
                 </div>
 
-                <div class="border-bottom  ">
-                    <h1 class="fw-bold">Occation</h1>
+                <div class="border-bottom m-4 ">
+                    <h5 class="fw-bold">Occation</h5>
                     <form>
                     {
                         occation.map((occ)=>{
@@ -50,15 +50,15 @@
                     </form>
                 </div>
 
-                <div class="dropdown ">
-                    <h1>Stories</h1>
+                <div class="dropdown m-4 ">
+                    <h5 className="fw-bold">Stories</h5>
                     <button class="btn btn-white dropdown-toggle border small" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Show White
                     </button>
                 </div>
 
                 <div>
-                    <h1 class="fw-bold">Colors</h1>
+                    <h5 class="fw-bold m-4">Colors</h5>
                     <form>
                         {
                             colors.map((colo)=>{
@@ -69,8 +69,8 @@
                 </form>
 
                 </div>
-                <div>
-                    <h1 class="fw-bold">Stock</h1>
+                <div className="m-4">
+                    <h5 class="fw-bold">Stock</h5>
                     <form>
                         {
                             stock.map((sto)=>{

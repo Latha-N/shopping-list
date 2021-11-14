@@ -59,3 +59,17 @@ body {
  .cost-space{
    word-spacing: 40px;
  }
+
+ .color-size{
+   width: 18px;
+   height: 18px;
+   
+ }
+
+ .vl{
+   border-left: 6px solid #e8edee;
+   height: 80px;
+ }
+ .nva-item{
+   padding-inline: 5px;
+ }

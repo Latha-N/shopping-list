@@ -12,24 +12,27 @@
 
                     const Listing = (props) => {
                         const [isShown, setIsShown] = useState(false);
+                        const [selected,setSelected] = useState(0)
                         const [name,setNames] = useState(['men','women','kids','New'])
                         const [list,setList] = useState([
-                            {image:image1,title:'Lace insert Velveteen Black Dress',mrp:'1000',cost:'699',discount:'30%off',dcost:'699'},
-                            {image:image2,title:'Jack furnandies',mrp:'1000',cost:'699',discount:'30%off',dcost:'699'},
-                        {image:image3,title:'keronatics jeans',mrp:'1000',cost:'699'},
-                        {image:image4,title:'fasorts borns',mrp:'1000',cost:'699'},
-                        {image:image5,title:' Velveteen Black Dress',mrp:'1000',cost:'699'},
-                        {image:image7,title:'Lace insert Velveteen',mrp:'1000',cost:'699'},
-                        {image:image4,title:'Black Dress',mrp:'1000',cost:'699'},
-                        {image:image5,title:'Velveteen Black Dress',mrp:'1000',cost:'699'},
-                        {image:image7,title:'Lace insert Velveteen Black',mrp:'1000',cost:'699'},
-                        {image:image5,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
-                        {image:image7,title:'Lace insert Velveteen ',mrp:'1000',cost:'699'},
-                        {image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
-                        {image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
-                        {image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'}])
+                            {id:1, image:image1,title:'Lace insert Velveteen Black Dress',mrp:'1000',cost:'699',discount:'30%off',dcost:'699'},
+                            {id:2,image:image2,title:'Jack furnandies',mrp:'1000',cost:'699',discount:'30%off',dcost:'699'},
+                        {id:3,image:image3,title:'keronatics jeans',mrp:'1000',cost:'699'},
+                        {id:4,image:image4,title:'fasorts borns',mrp:'1000',cost:'699'},
+                        {id:5,image:image5,title:' Velveteen Black Dress',mrp:'1000',cost:'699'},
+                        {id:6,image:image7,title:'Lace insert Velveteen',mrp:'1000',cost:'699'},
+                        {id:7,image:image4,title:'Black Dress',mrp:'1000',cost:'699'},
+                        {id:8, image:image5,title:'Velveteen Black Dress',mrp:'1000',cost:'699'},
+                        {id:9,image:image7,title:'Lace insert Velveteen Black',mrp:'1000',cost:'699'},
+                        {id:10,image:image5,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
+                        {id:11, image:image7,title:'Lace insert Velveteen ',mrp:'1000',cost:'699'},
+                        {id:12,image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
+                        {id:13,image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'},
+                        {id:14,image:image3,title:'insert Velveteen Black Dress',mrp:'1000',cost:'699'}])
                     
-                    
+                        // setSelected((id)=>{
+
+                        // })
 
                         const clearAll = (()=>{
                             setNames([])
@@ -69,33 +72,38 @@
                                 <div class="row">
                                     {
                                     list.map((lis)=>{
-                                                return <div class="col-md-3">
-                                                            <span onMouseEnter={() => setIsShown(true)}
-                                                                onMouseLeave={() => setIsShown(false)}>
+                                                return <div key={lis.id} class="col-md-3">
+                                                            <span onMouseEnter={() => setSelected(lis.id)}
+                                                                onMouseLeave={() => setSelected(0)}>
+
                                                                 <img src={lis.image} width="100%" /></span>
-                                                                    <div class="card-body">
+                                                                {
+                                                                            lis.id==selected ?(
+                                                                                <div class=" shadow-lg mb-3 p-3 bg-body ">
+                                                                                
+                                                                                <h5 class="small"><b>{lis.title}</b></h5>
+                                                                                <h5 class="small cost-space">MRP-{lis.mrp} <del>cost-{lis.cost}</del></h5>
+                                                                                <p class="card-text cost-space"><span class="text-primary">{lis.discount ? <span>{lis.discount}</span>: ''}</span> <b>{lis.dcost ? <span>cost-{lis.dcost}</span>: ''}</b></p>
+                                                                                <input type="color" className='color-size '/>
+                                                                                <input type="color" className='color-size'/>
+                                                                                <input type="color" className='color-size'/>
+                                                                                <input type="color" className='color-size'/>
+                                                                                <div class="d-grid ">
+                                                                                <button class="btn btn-primary" type="button">view</button>
+                                                                             
+                                                                                </div>
+                                                                                </div>
+                                                                            ):<div>
+                                                                                <div class="card-body">
                                                                         <h5 class="card-title small " id="latha"><b>{lis.title}</b></h5>
                                                                         <h5 class="card-title small cost-space">MRP-{lis.mrp} <del>cost-{lis.cost}</del></h5>
                                                                         <p class="card-text cost-space"><span class="text-primary">{lis.discount ? <span>{lis.discount}</span>: ''}</span> <b>{lis.dcost ? <span class="fw-bold">cost-{lis.dcost}</span>: ''}</b></p>
                                                                         </div>
-                                                                        {
-                                                                            isShown && (
-                                                                                <div class=" shadow-lg p-3 mb-5 bg-body rounded" >
-                                                                                <div>
-                                                                                <h5 class="small"><b>{lis.title}</b></h5>
-                                                                                <h5 class="small cost-space">MRP-{lis.mrp} <del>cost-{lis.cost}</del></h5>
-                                                                                <p class="card-text cost-space"><span class="text-primary">{lis.discount ? <span>{lis.discount}</span>: ''}</span> <b>{lis.dcost ? <span>cost-{lis.dcost}</span>: ''}</b></p>
-                                                                                <input type="color"/>
-                                                                                <input type="color"/>
-                                                                                <input type="color"/>
-                                                                                <input type="color"/>
-                                                                                <div class="d-grid ">
-                                                                                <button class="btn btn-primary" type="button">view</button>
                                                                             </div>
-                                                                                </div>
-                                                                                </div>
-                                                                            )
+                                                                            
                                                                         }
+                                                                    
+
                                                                     </div>
                                                                 })
                                                             }
