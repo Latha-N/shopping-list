@@ -4,7 +4,7 @@ import "../../src/App.css"
 
 const Footer = () => {
   return (
-    <div class="footer">
+    <div className="footer">
       <p>@Copyright Intrakraft 2017.All rights reserved.</p>
     </div>
   )

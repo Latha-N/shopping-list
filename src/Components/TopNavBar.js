@@ -11,10 +11,7 @@ const TopNavbar = () => {
 
   return (
     <div>
-    
-        <div>
-          
-          <nav class="navbar navbar-expand-lg navbar-light  nav" >
+        <nav class="navbar navbar-expand-lg navbar-light  nav " >
           <a class="navbar-brand" href="#">
                 <div class="navd">
                   <img src={intrakraft} width="60px" height="60px" />
@@ -24,11 +21,10 @@ const TopNavbar = () => {
                         </div>
                 </div>
               </a>
-            
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <ul class="navbar-nav" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-links" id="navbarSupportedContent">
                   <li class="nav-item ml-5">
                       <a class="nav-link text-dark" href="#">Orders</a>
                 </li>
@@ -62,10 +58,9 @@ const TopNavbar = () => {
                             <div class="dropdown-menu"> <a class="dropdown-item" href="#">Link 1</a> <a class="dropdown-item" href="#">Link 2</a> <a class="dropdown-item" href="#">Link 3</a> </div>
                       </li>
                 </ul>
+
           </nav>
           </div>
-          </div>
-
 )
 }
 
