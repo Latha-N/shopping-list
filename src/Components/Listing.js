@@ -40,21 +40,23 @@
                         
 
                     return (
-                        <div className="bg-white">
-                            <ul class="nav1 my-3 ">
-                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Home /</a> </p>
-                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Brand /</a> </p>
-                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Jack & jones /</a> </p>
+                        <div className="ccontainer bg-white">
+                            <div className=" mr-1">
+                            <ul class="nav1  pt-3">
+                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Home/</a> </p>
+                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Brand/</a> </p>
+                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Jack&jones/</a> </p>
                             <p class="nav-item"> <a class="nav-link text-dark" href="#"><strong>Catalogue</strong></a> </p>
                         </ul>
-                        
+                        </div>
+
 
                 <div>
                     
-                    <ul className="nav m-3">
+                    <ul className="nav m-3 center">
                                 {
                                     name.map((na)=>{
-                                        return <li key={na.id} className="chip border">
+                                        return <li key={na.id} className="chip border mb-3">
                                             {na.name} 
                                             <span class="closebtn" onClick={()=>handleRemove(na.id)}>&times;</span>
 
@@ -70,11 +72,12 @@
                                 
                         </ul>
                     </div>
+
                     <div className="container">
                                 <div className="row">
                                     {
                                     list.map((lis)=>{
-                                        return <div key={lis.id} class="col-md-3 ">
+                                        return <div key={lis.id} class="col-md-3 mt-3">
                                                 <span onMouseEnter={() => setSelected(lis.id)}
                                                       onMouseLeave={() => setSelected(0)}>
                                                       <img src={lis.image} width="100%" /></span>

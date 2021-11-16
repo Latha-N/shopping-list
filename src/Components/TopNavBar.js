@@ -16,7 +16,7 @@ const TopNavbar = () => {
                 <div class="navd">
                   <img src={intrakraft} width="60px" height="60px" />
                       <div class="navdd">
-                          <h2 class="fs-2 opacity-100 fw-bold">Intrakarft</h2>
+                          <h2 class="fs-2 opacity-100 fw-bold" style={{marginBottom:"-8px"}}>Intrakarft</h2>
                         <p class="fs-6 opacity-50">Correct. Interact. Transact.</p>            
                         </div>
                 </div>

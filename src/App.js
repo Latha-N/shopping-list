@@ -16,7 +16,7 @@ const App = () => {
     </div>
     <div >
         <div class="row bg-light">
-            <div class="col-md-3 m-3">
+            <div class="col-md-3 m-3 h-100">
             <Sidebar/>
             </div>
             <div class="col-md-8 m-3">
@@ -25,7 +25,7 @@ const App = () => {
     </div>
 
     </div>
-        <div>
+        <div className="w-100">
         <Footer/>
         </div>  
     </div>
