@@ -61,16 +61,20 @@
                                     </li>
                                     })
                                 }
-                                <li className="nav-item">
-                                <div className="alert alert-dismissible fade show  mr-2">
-                            <a href="#" className="link-primary" onClick={clearAll}>Clear All</a></div></li>
+                                {
+                                    name.length > 0 ? (<li className="nav-item">
+                                    <div className="alert alert-dismissible fade show  mr-2">
+                                    <a href="#" className="link-primary" onClick={clearAll}>Clear All</a></div></li>
+                                    ) :('')
+                                }
+                                
                         </ul>
                     </div>
                     <div className="container">
                                 <div className="row">
                                     {
                                     list.map((lis)=>{
-                                        return <div key={lis.id} class="col-md-3">
+                                        return <div key={lis.id} class="col-md-3 ">
                                                 <span onMouseEnter={() => setSelected(lis.id)}
                                                       onMouseLeave={() => setSelected(0)}>
                                                       <img src={lis.image} width="100%" /></span>
