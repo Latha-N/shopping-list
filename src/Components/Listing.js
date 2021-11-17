@@ -40,18 +40,23 @@
                         
 
                     return (
-                        <div className="ccontainer bg-white">
-                            <div className=" mr-1">
-                            <ul class="nav1  pt-3">
-                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Home/</a> </p>
-                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Brand/</a> </p>
-                            <p class="nav-item"> <a class="nav-link text-dark" href="#">Jack&jones/</a> </p>
-                            <p class="nav-item"> <a class="nav-link text-dark" href="#"><strong>Catalogue</strong></a> </p>
+                        <div className="container-fluid bg-white ">
+                        <ul class="nav border-bottom-0 pt-4">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Home/</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Brand/</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Jack&Jones/</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fs-bold" href="#">Catalogue</a>
+                            </li>
                         </ul>
-                        </div>
 
-
-                <div>
+                    <div>
                     
                     <ul className="nav m-3 center">
                                 {
