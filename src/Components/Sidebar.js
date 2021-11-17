@@ -62,8 +62,8 @@
                         <span className="text-primary p-3 center">+24 more</span>
                 </form>
                 </div>
-                <div className="m-4 pb-5">
-                    <h5 className="fw-bold ">Stock</h5>
+                <div className="m-4 " style={{paddingBottom:'130px'}}>
+                    <h5 className="fw-bold " >Stock</h5>
                     <form>
                         {
                             stock.map((sto,i)=>{
