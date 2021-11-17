@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../src/App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBag, faBell } from '@fortawesome/free-solid-svg-icons'
-import intrakarft from '../intrakraft.png'
+import int from '../int.jpeg'
 import logo2 from '../logo2.png'
 
 
@@ -16,11 +16,11 @@ const TopNavbar = () => {
     <div class="container-fluid">
     <a className="navbar-brand" href="#">
                  <div className="navd">
-                   <img src={intrakarft} width="40px" height="40px"/>
-                        <div class="navdd">
+                   <img src={int}/>
+                        {/* <div class="navdd p-0">
                            <h2 class="fs-2 opacity-100 fw-bold" style={{marginBottom:"-8px"}}>Intrakarft</h2>
                          <p class="fs-6 opacity-50">Correct. Interact. Transact.</p>            
-                         </div>
+                         </div> */}
                 </div>
                </a>
 
