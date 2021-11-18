@@ -41,7 +41,7 @@
 
                     return (
                         <div className="container-fluid bg-white ">
-                        <ul class="nav border-bottom-0 pt-4">
+                        <ul class="nav border-bottom-0 pt-3">
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="#">Home/</a>
                             </li>
