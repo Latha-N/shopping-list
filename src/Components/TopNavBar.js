@@ -12,7 +12,7 @@ const TopNavbar = () => {
 
   return (
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
     <div class="container-fluid">
     <a className="navbar-brand" href="#">
                  <div className="navd">
@@ -35,13 +35,13 @@ const TopNavbar = () => {
 
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
-                       <li className="nav-item ml-5">
+                       <li className="nav-item ml-5 p-2">
                        <a className="nav-link text-dark" href="#">Orders</a>
                  </li>
-                 <li className="nav-item active mr-5 ml-5">
+                 <li className="nav-item active mr-5 ml-5 p-2">
                        <a className="nav-link  text-dark" href="#">Brands</a>
                    </li>
-                   <li className="nav-item mr-5">
+                   <li className="nav-item mr-5 p-2">
                        <a className="nav-link  text-dark" href="#">Connections</a>
                    </li>
                 
@@ -58,10 +58,10 @@ const TopNavbar = () => {
                    </li>
                   
                    <li>
-                     <div className="vl"></div>
+                     <div className="vl p-2"></div>
                    </li>
                    <li className="navbar-item">
-                     <a className="border-left nav-link "><img className="rounded-circle" src={logo2} width="60px" height="60px" /></a>
+                     <a className="border-left nav-link "><img className="rounded-circle" src={logo2} width="50px" height="50px" /></a>
                      </li>
                      <li className="nav-item dropdown">
                              <button type="button" className="btn btn-white dropdown-toggle" data-toggle="dropdown"> <strong>Welcome <br/>Shopper shope</strong> </button>
